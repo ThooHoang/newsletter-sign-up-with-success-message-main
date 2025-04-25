@@ -56,13 +56,18 @@ body {
 .label-styling {
     color: var(--blue-800);
     font-weight: 700;
+     display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    flex-direction: row; 
+   
 }
 
 .input-styling {
     color: var(--grey);
     border: 1px solid var(--grey);
     outline: none;
-    border-radius: 5px; ;
+    border-radius: 5px; 
 }
 
 .btn {
@@ -71,6 +76,7 @@ body {
     font-weight: 700;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .br-5 {
@@ -189,6 +195,10 @@ button {
     width: 40px;
 }
 
+.error-message{
+    color: var(--red);
+}
+
 .success-container h1 {
     font-size: 3rem;
     margin-block: 1rem;
@@ -211,11 +221,15 @@ button {
 
 
 .success-message {
-    display: none;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0 auto;
+}
+
+
+.hidden {
+    display: none;
 }
 
 /* Media Queries */
