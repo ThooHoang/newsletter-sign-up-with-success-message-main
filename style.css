@@ -20,7 +20,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid lightcoral;
+    /* border: 1px solid lightcoral; */
     
 }
 
@@ -90,6 +90,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0 auto;
 }
 
 
@@ -155,6 +156,36 @@ button {
 }
 
 
+/* Media Queries */
+
+@media (max-width: 755px) {
+    .newsletter-card {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .body-image {
+        width: 100%;
+        height: 300px;
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+        background-size:cover ;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .body-image img{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 375px) {
+
+    .body-text h1 {
+        font-size: 3rem;
+    }
+    
+}
 
 
 
