@@ -147,12 +147,28 @@ form > div label {
     font-size: 0.8rem;
 }
 
+.label-message {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.label-message span {
+    color: var(--red);
+    font-size: 0.8rem;
+}
+
 form input {
     padding: 1rem ;
 }
 
+form input:focus {
+    color: black;
+}
+
 button {
     padding: 1.3rem;
+    margin-block: 1rem ;
 }
 
 
@@ -192,6 +208,15 @@ button {
     font-size: 0.9rem;
 }
 
+
+
+.success-message {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
 
 /* Media Queries */
 
